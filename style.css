@@ -1,0 +1,161 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#body {
+	color: #262323;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color:#e2b35c;
+	border-bottom: 3px solid #8d5e17;
+	border-top: 3px solid #8d5e17;
+}
+
+header {
+	color: #262323;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: linear-gradient(#f1d2a9, #e2b35c);
+}
+
+footer {
+	color: #262323;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-image: linear-gradient(#e2b35c, #f1d2a9);
+}
+
+nav#top-menu {
+    margin: auto;
+    background-color: #e0f4f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+    padding: 20px 20px 20px 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+td {
+	padding: 5px 15px;
+}
+nav#bottom-menu {
+    margin: auto;
+    background-color: #e0f4f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+    padding: 20px 20px 20px 20px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#galeria {
+	display: flex;
+	justify-content: space-around;
+}
+
+#galeria img {
+	max-width: 40%;
+	width: 40%;
+}
+
+#galeria img:hover {
+	max-width: 60%;
+	width: 60%;
+}
+
+.wiadomosci {
+	width: 60%;
+    margin-left: 20%;
+}
+
+#form {
+    display: flex;
+    justify-content: space-around;
+  }
+
+textarea {
+    height: 100px;
+    width: 300px;
+}
+
+#plant img {
+    height: 120px;
+    width: 70px;
+}
+
+.socialmedia img {
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+}
+
+#pingwin img {
+    margin-top: 20px;
+}   
+
+div.polaroid {
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+img {width: 100%}
+  
+div.container {
+   text-align: center;
+    padding: 10px 20px;
+}
+
+article > h3 { 
+	color: rgb(128, 15, 0);
+}
+
+a {
+	color: #5bd450;
+	text-decoration: none;
+}
+a:visited {
+		color: #136d1c;
+		text-decoration: none;
+}
+
+header h1 {
+    color:rgba(14, 117, 6, 0.618)
+}
+
+header h2 {
+    color:rgba(87, 169, 15, 0.785)
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+[title="artykul"] {
+    font-style: oblique;
+}
+
+.wiadomosci {
+    border: double;
+}

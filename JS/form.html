@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+        <script defer src="form_check.js"></script>
+		<meta charset="utf-8">
+        <meta name="author" content="Kacper Ptak">
+		<title> Formularz </title>
+		<link rel="stylesheet" href="styles.css" title="Arkusz stylów CSS">
+	</head>
+	<body onload="hideAllErrors()">
+	<div id="box">
+        <ul>
+            <li class="error" id="imieError">Podaj imię <br> </li>
+            <li class="error" id="nazwiskoError">Podaj nazwisko <br> </li>
+            <li class="error" id="emailError">Podaj poprawny adres email <br>  </li>
+            <li class="error" id="dataError">Podaj datę urodzenia <br> </li>
+            <li class="error" id="hasloError">Podaj hasło <br> </li>
+            <li class="error" id="haslo2Error">Złe hasło<br> </li>
+            <li class="error" id="opisError">Brak opisu<br> </li>
+        </ul>
+	</div>
+	<br>
+<form onSubmit="return formCheck(true)">
+  <span class="label">Imie:</span>
+  <input type="text" value="" id="imie" onfocusout="formCheck(false, 'imie')"> <div class="error" id="imieMarker">* </div>
+  <br>
+   <span class="label">Nazwisko:</span>
+  <input type="text" value="" id="nazwisko" onfocusout="formCheck(false, 'nazwisko')"> <div class="error" id="nazwiskoMarker">* </div>
+  <br>
+  <span class="label">Email:</span>
+  <input type="text" value="" id="email" onfocusout="formCheck(false, 'email')"> <div class="error" id="emailMarker">* </div>
+  <br>
+  <span class="label">Data urodzenia:</span>
+  <input type="date" value="" id="data" onfocusout="formCheck(false, 'data')"> <div class="error" id="dataMarker">* </div>
+  <br>
+    <span class="label">Hasło:</span>
+  <input type="password" value="" id="haslo" onfocusout="formCheck(false, 'haslo')"> <div class="error" id="hasloMarker">* </div>
+  <br>
+    <span class="label">Powtórz hasło:</span>
+  <input type="password" value="" id="haslo2" onfocusout="formCheck(false, 'haslo2')"> <div class="error" id="haslo2Marker">* </div>
+  <br>
+      <span class="label">Opis:</span>
+  <input type="text" value="" id="opis" maxlength="20" onfocusout="formCheck(false, 'opis')"> <div class="error" id="opisMarker">* </div>
+  <br>
+  <br>
+  <input type="submit" value="Zarejestruj się" style="margin-left: 50px">
+</form>
+    <br>
+    <table id="tabela">
+        <tbody>
+        <tr>
+            <td contenteditable="true">Wiersz 1</td>
+            <td contenteditable="true">Wiersz 2</td>
+            <td contenteditable="true">Wiersz 3</td>
+
+            <td><input type="button" value="Usuń" onclick="deleteRow(this)"></td>
+            <td><input type="checkbox" class="select"></td>
+            <td><input type="button" value="↑" onclick="arrow_direction('gora', this);"></td>
+            <td><input type="button" value="↓" onclick="arrow_direction('dol', this);"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true">Wiersz 4</td>
+            <td contenteditable="true">Wiersz 5</td>
+            <td contenteditable="true">Wiersz 6</td>
+
+            <td><input type="button" value="Usuń" onclick="deleteRow(this)"></td>
+            <td><input type="checkbox" class="select"></td>
+            <td><input type="button" value="↑" onclick="arrow_direction('gora', this);"></td>
+            <td><input type="button" value="↓" onclick="arrow_direction('dol', this);"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true">Wiersz 7</td>
+            <td contenteditable="true">Wiersz 8</td>
+            <td contenteditable="true">Wiersz 9</td>
+
+            <td><input type="button" value="Usuń" onclick="deleteRow(this)"></td>
+            <td><input type="checkbox" class="select"></td>
+            <td><input type="button" value="↑" onclick="arrow_direction('gora', this);"></td>
+            <td><input type="button" value="↓" onclick="arrow_direction('dol', this);"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <div id="rowNum">Liczba rzędów: 3</div>
+    <br>
+    <button type="button" onclick="addRow()">Dodaj nowy rząd</button>
+    <button type="button" onclick="deleteRows()">Usuń wybrane rzędy</button>
+    </body>
+</html>

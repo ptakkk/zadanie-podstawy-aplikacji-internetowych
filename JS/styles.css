@@ -1,0 +1,15 @@
+#box {
+	width: 350px;
+}
+
+.error {
+	color: rgb(235, 17, 17);
+}
+
+tr:nth-child(even) {
+	background: #50a44a
+}
+
+tr:nth-child(odd) {
+	background: #e46245
+}
