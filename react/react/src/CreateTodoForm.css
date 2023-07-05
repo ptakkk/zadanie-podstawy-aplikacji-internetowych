@@ -1,0 +1,12 @@
+.CreateTodoForm_flex {
+  display: flex;
+}
+
+.CreateTodoForm input, .AddTodoForm button {
+  padding: 8px 14px;
+  font-weight: bold;
+}
+
+.CreateTodoForm input {
+  flex: 1;
+}

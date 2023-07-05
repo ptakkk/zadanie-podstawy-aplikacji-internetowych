@@ -1,0 +1,29 @@
+.TodoItem {
+  display: flex;
+  background: #eee;
+  margin: 3px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.TodoItem input {
+  align-self: center;
+}
+
+.TodoItem label {
+  flex-grow: 1;
+  padding: 10px 24px;
+  word-break: break-all;
+}
+
+.TodoItem label.done {
+  text-decoration: line-through;
+}
+
+.TodoItem button {
+  background: red;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

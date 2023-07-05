@@ -1,0 +1,22 @@
+.App {
+  max-width: 500px;
+  margin: 30px auto;
+  font-size: 16px;
+  background: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+}
+
+.App, input, button {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+hr {
+  margin: 30px 0;
+}
